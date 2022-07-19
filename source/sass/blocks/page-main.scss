@@ -1,0 +1,21 @@
+.page-main {
+  flex-grow: 1;
+}
+
+.page-main__selection {
+  @media (--wide-vp) {
+    margin-bottom: 135px;
+  }
+}
+
+.page-main__advantages {
+  @media (--wide-vp) {
+    margin-bottom: 51px;
+  }
+}
+
+.page-main__catalog-add {
+  @media (--wide-vp) {
+    margin-bottom: 86px;
+  }
+}
