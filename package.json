@@ -1,7 +1,7 @@
 {
-  "name": "cat-energy",
+  "name": "antarctic",
   "private": true,
-  "description": "Личный проект «Кэт энерджи» от HTML Academy",
+  "description": "Проект «Круизы в Антарктику» Акселератор от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.0",
