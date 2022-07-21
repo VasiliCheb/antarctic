@@ -1,4 +1,36 @@
+.page-main {
+  flex-grow: 1;
+}
+
+.page-main h1 {
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  margin-top: 0;
+}
+
+.page-main h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.page-main h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.page-main__wrapper i {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+
 .page-main__wrapper {
+  padding-top: 176px;
   color: var(--color-base-light);
   background-color: var(--color-bg-image);
 }

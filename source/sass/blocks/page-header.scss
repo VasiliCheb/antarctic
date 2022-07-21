@@ -1,3 +1,10 @@
 .page-header {
   background-color: var(--color-bg-image);
+  padding: 20px 0;
+}
+
+.page-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

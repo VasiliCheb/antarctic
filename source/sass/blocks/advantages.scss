@@ -2,6 +2,12 @@
   background-color: var(--color-bg-advantages);
 }
 
+.advantages p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
 .advantages__list {
   list-style-type: none;
   padding-left: 0;

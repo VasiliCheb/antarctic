@@ -1,0 +1,21 @@
+.cruises__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.cruises__item {
+  color: var(--color-base-light);
+  background-color: var(--color-base-dark);
+}
+
+.cruises__specification-set dt {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.cruises__specification-set dd {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+}

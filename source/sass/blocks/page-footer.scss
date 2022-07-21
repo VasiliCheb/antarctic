@@ -1,3 +1,14 @@
 .page-footer__container {
   background-color: var(--color-base-dark);
+  padding: 35px 0;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.page-footer__main-nav {
+  margin-right: auto;
+  margin-left: 40px;
 }
