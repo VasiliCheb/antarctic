@@ -1,0 +1,13 @@
+.logo__img {
+  width: 70px;
+  height: auto;
+  fill: var(--color-base-light);
+
+  @media (--middle-vp) {
+    width: 38px;
+  }
+
+  @media (--small-vp) {
+    width: 42px;
+  }
+}

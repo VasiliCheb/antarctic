@@ -1,14 +1,35 @@
 .page-footer__container {
   background-color: var(--color-base-dark);
   padding: 35px 0;
+
+  @media (--middle-vp) {
+    padding: 40px 0;
+  }
+
+  @media (--small-vp) {
+    padding: 30px 0 40px 0;
+  }
 }
 
 .page-footer__wrapper {
   display: flex;
   align-items: center;
+
+  @media (--small-vp) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .page-footer__main-nav {
   margin-right: auto;
   margin-left: 40px;
+
+  @media (--middle-vp) {
+    margin-left: 25px;
+  }
+
+  @media (--small-vp) {
+    margin: 0;
+  }
 }

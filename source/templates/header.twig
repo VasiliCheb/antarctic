@@ -1,21 +1,21 @@
 <header class="page-header">
   <div class="page-header-wrapper page__wrapper-center">
     <div class="page-header__wrapper-logo logo">
-      <a class="page-header__logo-link logo__link" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-        <svg class="page-header__logo logo__img" role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
+      <a class="page-header__logo-link logo__link" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
+        <svg class="page-header__logo logo__img logo__img--header" role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
           <use href="./img/logos.svg#logo"></use>
         </svg>
       </a>
     </div>
-    <nav class="page-header__main-nav main-nav {% if permalink == "index.html" %}main-nav--within_index{% endif %}">
-      <button class="main-nav__toggle" type="button" hidden>
+    <nav class="page-header__main-nav main-nav main-nav--header nav-menu {% if permalink == "index.html" %}main-nav--within_index{% endif %}">
+      <button class="nav-menu__toggle" type="button" hidden>
         <span class="page__visual-hidden">Открыть или закрыть меню.</span>
       </button>
       <ul class="main-nav__list">
         {% for page in pages %}
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--header">
             <a
-              class="main-nav__link"
+              class="main-nav__link main-nav__link--header"
               href="{{ page.path }}"
               {% if permalink == page.path %}
                 aria-current="page"
