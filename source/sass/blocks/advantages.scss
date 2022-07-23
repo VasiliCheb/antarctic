@@ -11,8 +11,24 @@
 .advantages__list {
   list-style-type: none;
   padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+
+  @media (--not-wide-vp) {
+    gap: 30px;
+  }
+
+  @media (--small-vp) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .advantages__item {
   background-color: var(--color-base-light);
+  padding: 30px;
+
+  @media (--not-wide-vp) {
+    padding: 25px 20px;
+  }
 }
