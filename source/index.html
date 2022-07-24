@@ -19,8 +19,10 @@
 
       <section class="page-main__presentation presentation page__wrapper-center">
         <div class="presentation__wrapper-grid">
-          <h2>Путешествие на&nbsp;край Земли</h2>
-          <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+          <div class="presentation__wrapper-content">
+            <h2>Путешествие на&nbsp;край Земли</h2>
+            <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
+          </div>
           <div class="presentation__image-set">
             <picture>
               <source srcset="./img/tour-l@1x.webp, ./img/tour-l@2x.webp 2x" type="image/webp" media="(min-width: 1250px)">
@@ -320,33 +322,37 @@
       </section>
 
       <section class="page-main__reservation reservation">
-        <div class="page__wrapper-center">
+        <div class="reservation__wrapper-container page__wrapper-center">
           <h2>Раннее бронирование</h2>
-          <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+          <p>Забронируйте тур за&nbsp;3&ndash;6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%
+          </p>
           <div class="reservation__form">
-            <i>Оставьте заявку и мы свяжемся с вами в ближайшее время</i>
+            <i>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</i>
 
             <form class="form" action="https://echo.htmlacademy.ru/" method="get">
-              <ul class="form__list">
-                <li class="form__item">
-                  <div class="form__field">
-                    <label class="page__visual-hidden" for="user-name">Имя:*</label>
-                    <input id="user-name" placeholder="Имя" type="text" name="name" required>
-                  </div>
-                </li>
-                <li class="form__item">
-                  <div class="form__field">
-                    <label class="page__visual-hidden" for="user-phone">Телефон:*</label>
-                    <input id="user-phone" type="tel" placeholder="Телефон" name="phone" required>
-                  </div>
-                </li>
-                <li class="form__item">
-                  <div class="form__field">
-                    <label class="page__visual-hidden" for="user-email">Email:*</label>
-                    <input id="user-email" type="email" placeholder="Email" name="email" required>
-                  </div>
-                </li>
-              </ul>
+              <fieldset class="form__fieldset">
+                <legend class="page__visual-hidden">Данные пользователа для заявки:</legend>
+                <ul class="form__list">
+                  <li class="form__item">
+                    <div class="form__field">
+                      <label class="page__visual-hidden" for="user-name">Имя:*</label>
+                      <input id="user-name" placeholder="Имя" type="text" name="name" required>
+                    </div>
+                  </li>
+                  <li class="form__item">
+                    <div class="form__field">
+                      <label class="page__visual-hidden" for="user-phone">Телефон:*</label>
+                      <input id="user-phone" type="tel" placeholder="Телефон" name="phone" required>
+                    </div>
+                  </li>
+                  <li class="form__item">
+                    <div class="form__field">
+                      <label class="page__visual-hidden" for="user-email">Email:*</label>
+                      <input id="user-email" type="email" placeholder="Email" name="email" required>
+                    </div>
+                  </li>
+                </ul>
+              </fieldset>
 
               <ul class="form__checkbox-list">
                 <li class="form__checkbox-item">

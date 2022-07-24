@@ -1,0 +1,47 @@
+.form__fieldset {
+  border: none;
+}
+
+.form__item input {
+  font-family: var(--regular-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  font-style: normal;
+  color: var(--color-base-dark);
+  border: none;
+}
+
+.form__checkbox-item input {
+  display: grid;
+  position: relative;
+  margin: 0;
+  appearance: none;
+  place-items: center;
+
+  &::before {
+    display: block;
+    box-sizing: border-box;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-color: var(--color-base-light);
+    border: none;
+
+    @media (--small-vp) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &:checked::after {
+    position: absolute;
+    display: block;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../icons/sprite.svg#checkbox-request");
+    width: 18px;
+    height: 18px;
+  }
+}

@@ -15,4 +15,52 @@
   font-size: 18px;
   line-height: 1.5;
   font-style: normal;
+  color: var(--color-base-light);
+}
+
+.reservation {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  --bg-url: url("../../img/reservation-l@1x.jpg");
+
+  @media (--middle-vp) {
+    padding-top: 100px;
+    padding-bottom: 97px;
+  }
+
+  @media (--small-vp) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    background: var(--bg-url);
+    width: 100%;
+    height: 555px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--color-bg-reservation);
+    z-index: -1;
+    top: 0;
+
+    @media (--x2) {
+      --bg-url: url("../../img/reservation-l@2x.jpg");
+    }
+
+    @media (--middle-vp) {
+      height: 805px;
+    }
+
+    @media (--small-vp) {
+      height: 760px;
+    }
+  }
+}
+
+.reservation__form {
+  background-color: var(--color-base-dark);
 }

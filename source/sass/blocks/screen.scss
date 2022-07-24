@@ -62,6 +62,9 @@
 }
 
 .screen__wrapper-context {
+  display: flex;
+  flex-direction: column;
+
   @media (--wide-vp) {
     margin-left: 198px;
   }
