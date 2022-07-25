@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 120px;
   padding-bottom: 120px;
-  --bg-url: url("../../img/advantages-bg-l@1x.png");
+  --bg-url: url("../../img/advantages-bg-l@1x.jpg");
 
   @media (--middle-vp) {
     padding-top: 100px;
@@ -17,7 +17,12 @@
   &::before {
     position: absolute;
     content: "";
-    background: var(--bg-url);
+    background:
+      linear-gradient(
+        var(--color-gradient-advantages),
+        var(--color-gradient-advantages)
+        ),
+      var(--bg-url);
     width: 100%;
     height: 562px;
     background-size: cover;
@@ -28,7 +33,7 @@
     top: 0;
 
     @media (--x2) {
-      --bg-url: url("../../img/advantages-bg-l@2x.png");
+      --bg-url: url("../../img/advantages-bg-l@2x.jpg");
     }
 
     @media (--middle-vp) {
@@ -39,6 +44,10 @@
       height: 997px;
     }
   }
+}
+
+.advantages h2 {
+  text-align: center;
 }
 
 .advantages h3 {

@@ -2,12 +2,26 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
+
+  @media (--middle-vp) {
+    font-size: 34px;
+  }
+
+  @media (--small-vp) {
+    font-size: 24px;
+    line-height: 1.3;
+  }
 }
 
 .reservation p {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
+
+  @media (--small-vp) {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }
 
 .reservation__form i {
@@ -16,6 +30,11 @@
   line-height: 1.5;
   font-style: normal;
   color: var(--color-base-light);
+  margin-bottom: 35px;
+
+  @media (--small-vp) {
+    line-height: 1.4;
+  }
 }
 
 .reservation {
@@ -61,6 +80,51 @@
   }
 }
 
+.reservation__wrapper-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+
+  @media (--not-wide-vp) {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  @media (--small-vp) {
+    gap: 40px;
+  }
+}
+
+.reservation__wrapper-text {
+  place-self: center;
+
+  @media (--not-wide-vp) {
+    text-align: center;
+  }
+}
+
+.reservation__wrapper-text p {
+  width: 360px;
+
+  @media (--not-wide-vp) {
+    width: 55%;
+    margin: auto;
+  }
+}
+
 .reservation__form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-base-dark);
+  place-self: center;
+  width: 403px;
+  padding: 50px;
+
+  @media (--small-vp) {
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 403px;
+    text-align: center;
+  }
 }

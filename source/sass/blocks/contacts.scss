@@ -1,0 +1,44 @@
+.contacts em {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+.contacts p,
+.contacts a {
+  position: relative;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  font-style: normal;
+  padding-left: 28px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background: currentColor;
+    width: 22px;
+    height: 22px;
+    left: 0;
+  }
+}
+
+.contacts p {
+  &::before {
+    mask-image: url("../../icons/sprite.svg#contacts-address");
+  }
+}
+
+.contacts a {
+  text-decoration: none;
+  color: var(--color-base-dark);
+
+  &::before {
+    mask-image: url("../../icons/sprite.svg#contacts-phone");
+  }
+}
