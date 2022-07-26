@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+.cruises__title h3 {
+  margin: 0;
+}
+
 .cruises__list {
   list-style-type: none;
   display: grid;
@@ -25,10 +29,9 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 386px;
   color: var(--color-base-light);
   background-color: var(--color-base-dark);
-  min-height: 386px;
   width: 100%;
 }
 
@@ -41,8 +44,11 @@
 }
 
 .cruises__title {
-  padding: 35px 25px 0;
-  margin: 0;
+  /*padding: 35px 25px 0;
+  margin: 0;*/
+  z-index: 2;
+  margin-top: 343px;
+  margin-left: 30px;
 }
 
 .cruises__card {
@@ -53,18 +59,18 @@
 }
 
 .cruises__specification {
-  margin: 0;
-}
-
-.cruises__specification-set {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 30px;
+  height: 100%;
 }
 
 .cruises__specification-set dt {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
-  margin-bottom: 10px;
 }
 
 .cruises__specification-set dd {
@@ -81,7 +87,21 @@
 }
 
 .cruises__button {
-  display: block;
+  box-sizing: border-box;
+  display: grid;
   width: 100%;
-  height: 40px;
+  min-height: 40px;
+  place-items: center;
+  margin-top: auto;
+}
+
+.cruises__item:focus-within .cruises__image-set,
+.cruises__item:hover .cruises__image-set {
+  display: none;
+}
+
+.cruises__item:focus-within .cruises__title,
+.cruises__item:hover .cruises__title {
+  padding: 35px 25px 0;
+  margin: 0;
 }

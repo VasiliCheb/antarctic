@@ -34,6 +34,15 @@
 
   @media (--small-vp) {
     flex-direction: column;
+
+    &--header {
+      position: absolute;
+      background-color: var(--color-base-light);
+      width: 90%;
+      right: 0;
+      top: 0;
+      padding-top: 52px;
+    }
   }
 }
 
@@ -50,6 +59,7 @@
     &--header {
       margin-right: 30px;
       margin-left: 15px;
+      width: 100%;
     }
 
     &--header:not(:last-child) {

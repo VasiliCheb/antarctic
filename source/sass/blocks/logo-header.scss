@@ -1,0 +1,9 @@
+.logo-header__img--opened {
+  @media (--small-vp) {
+    position: absolute;
+    fill: var(--color-base-dark);
+    left: 10%;
+    margin-left: 25px;
+    z-index: 3;
+  }
+}
