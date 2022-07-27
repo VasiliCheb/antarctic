@@ -11,3 +11,28 @@
     width: 42px;
   }
 }
+
+.logo__link {
+  &:focus {
+    outline: 2px solid var(--color-base-light);
+    outline-offset: 2px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-base-light);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}

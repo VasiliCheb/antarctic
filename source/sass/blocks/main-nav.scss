@@ -76,11 +76,58 @@
   display: block;
   color: var(--color-base-light);
   text-decoration: none;
+  width: fit-content;
+
+  &:focus {
+    outline: 2px solid var(--color-base-light);
+    outline-offset: 2px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-base-light);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 
   @media (--small-vp) {
     &--header {
       color: var(--color-base-dark);
       padding: 10px;
+
+      &:focus {
+        outline: 2px solid var(--color-base-dark);
+        outline-offset: 2px;
+      }
+
+      &:focus:not(:focus-visible) {
+        outline: none;
+        outline-offset: revert;
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color-base-dark);
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        opacity: 80%;
+      }
+
+      &:active {
+        opacity: 60%;
+      }
     }
   }
 }

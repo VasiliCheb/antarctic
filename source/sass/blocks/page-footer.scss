@@ -19,6 +19,12 @@
   }
 }
 
+.page-footer__wrapper-logo {
+  @media (--small-vp) {
+    margin-bottom: 20px;
+  }
+}
+
 .page-footer__location {
   background-color: var(--color-bg-location);
   display: grid;

@@ -27,8 +27,47 @@
   text-align: center;
   z-index: 3;
 
+  &:focus {
+    outline: 2px solid var(--color-base-light);
+    outline-offset: 2px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-base-light);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
   @media (--small-vp) {
     display: block;
+  }
+}
+
+.nav-menu--opened .nav-menu__toggle {
+  margin-right: -7px;
+
+  &:focus {
+    outline: 2px solid var(--color-base-dark);
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-base-dark);
   }
 }
 
@@ -63,6 +102,7 @@
   width: 24px;
   height: 24px;
   mask-image: url("../../icons/sprite.svg#toggle-closed");
+  margin-right: 7px;
 }
 
 .nav-menu--nojs .nav-menu__toggle {

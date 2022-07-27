@@ -13,6 +13,42 @@
   margin-bottom: 20px;
 }
 
+.form input,
+.form__dispatch-button {
+  &:focus {
+    outline: 2px solid var(--color-base-light);
+    outline-offset: 2px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: revert;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-base-light);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    opacity: 80%;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &--error[required] {
+    outline: 2px solid var(--color-error);
+    outline-offset: -2px;
+  }
+}
+
 .form__item input {
   box-sizing: border-box;
   font-family: var(--regular-font);
@@ -25,6 +61,10 @@
   width: 100%;
   height: 43px;
   padding: 0 16px;
+
+  &:not(:placeholder-shown) {
+    outline: none;
+  }
 }
 
 .form__checkbox-item {

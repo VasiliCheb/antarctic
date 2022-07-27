@@ -3,6 +3,7 @@ const navMain = document.querySelector(".nav-menu");
 const navToggle = navMain.querySelector(".nav-menu__toggle");
 
   navMain.classList.remove("nav-menu--nojs");
+  logoHeader.classList.remove("logo-header__img--nojs");
   navMain.classList.add("nav-menu--closed");
 
 
