@@ -1,4 +1,12 @@
+.logo {
+  @media (--small-vp) {
+    min-height: 42px;
+  }
+}
+
 .logo__img {
+  display: block;
+  box-sizing: border-box;
   width: 70px;
   height: auto;
   fill: var(--color-base-light);
@@ -13,6 +21,9 @@
 }
 
 .logo__link {
+  display: block;
+  box-sizing: border-box;
+
   &:focus {
     outline: 2px solid var(--color-base-light);
     outline-offset: 2px;

@@ -24,7 +24,8 @@
         ),
       var(--bg-url);
     width: 100%;
-    height: 562px;
+    height: 100%;
+    min-height: 562px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -37,11 +38,11 @@
     }
 
     @media (--middle-vp) {
-      height: 588px;
+      min-height: 588px;
     }
 
     @media (--small-vp) {
-      height: 997px;
+      min-height: 997px;
     }
   }
 }

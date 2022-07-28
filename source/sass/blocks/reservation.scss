@@ -58,7 +58,8 @@
     content: "";
     background: var(--bg-url);
     width: 100%;
-    height: 555px;
+    height: 100%;
+    min-height: 555px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -71,11 +72,11 @@
     }
 
     @media (--middle-vp) {
-      height: 805px;
+      min-height: 805px;
     }
 
     @media (--small-vp) {
-      height: 760px;
+      min-height: 760px;
     }
   }
 }

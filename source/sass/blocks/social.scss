@@ -3,9 +3,20 @@
   flex-wrap: wrap;
   padding-left: 0;
   list-style-type: none;
+
+  @media (--wide-vp) {
+    min-width: 120px;
+  }
+
+  @media (--middle-vp) {
+    min-width: 100px;
+  }
 }
 
 .social__item {
+  padding-top: 5px;
+  margin-bottom: 5px;
+
   &:not(:last-child) {
     margin-right: 27px;
 
