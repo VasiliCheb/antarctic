@@ -1,9 +1,27 @@
 .page-header {
   position: relative;
-  padding: 20px 0;
+  --bg-url: url("../../img/index-top-l@1x.jpg");
+  background: var(--bg-url) no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 650px;
+  background-color: var(--color-bg-image);
+
+  @media (--x2) {
+    --bg-url: url("../../img/index-top-l@2x.jpg");
+  }
+
+  @media (--wide-vp) {
+    box-shadow: 0 4px 4px 0 var(--color-shadow-screen);
+  }
+
+  @media (--middle-vp) {
+    min-height: 638px;
+  }
 
   @media (--small-vp) {
-    padding: 10px 0;
+    min-height: 500px;
   }
 }
 
@@ -11,10 +29,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 0;
 
   @media (--small-vp) {
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px 0;
   }
 }
 

@@ -2,25 +2,6 @@
   flex-grow: 1;
 }
 
-.page-main h1 {
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 66px;
-  margin-top: 0;
-  margin-bottom: 30px;
-
-  @media (--middle-vp) {
-    font-size: 50px;
-    line-height: 61px;
-  }
-
-  @media (--small-vp) {
-    font-size: 36px;
-    line-height: 1.25;
-    margin-bottom: 25px;
-  }
-}
-
 .page-main h2 {
   font-weight: 600;
   font-size: 28px;
