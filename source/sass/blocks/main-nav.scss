@@ -27,10 +27,13 @@
 
 .main-nav__list {
   display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
   padding-left: 0;
   margin: 0;
+
+  @media (--not-small-vp) {
+    flex-wrap: wrap;
+  }
 
   @media (--small-vp) {
     flex-direction: column;
@@ -38,11 +41,12 @@
     &--header {
       position: absolute;
       background-color: var(--color-base-light);
-      width: 90%;
-      right: 0;
+      left: 20px;
+      right: 15px;
       top: 0;
       padding-top: 52px;
       z-index: 2;
+      box-shadow: 15px 0 0 0 var(--color-base-light);
     }
   }
 }

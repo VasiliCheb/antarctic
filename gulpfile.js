@@ -97,16 +97,6 @@ export function createWebp () {
     .pipe(dest("./build/img"))
 }
 
-export function createAvif () {
-  return src("./source/img/**/*.{jpg,png}")
-    .pipe(
-      squoosh({
-        avif: {}
-      })
-    )
-    .pipe(dest("./build/img"))
-}
-
 export function createSprite () {
   return src("./source/icons/*.svg")
     .pipe(svgSprite({
@@ -173,8 +163,7 @@ export const build = series(
     createSprite,
     copyAssets,
     optimizeImages,
-    createWebp,
-    createAvif
+    createWebp
   )
 );
 
@@ -189,8 +178,7 @@ export default series(
     createSprite,
     copyAssets,
     copyImages,
-    createWebp,
-    createAvif
+    createWebp
   ),
   series(
     startServer,

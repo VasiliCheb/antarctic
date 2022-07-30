@@ -1,33 +1,36 @@
 <header class="page-header">
-  <div class="page-header__wrapper page__wrapper-center">
-    <div class="page-header__wrapper-logo logo logo-header">
-      <a class="page-header__logo-link logo__link" href="#" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-        <svg class="page-header__logo logo__img logo-header__img logo-header__img--nojs logo__img--header" role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
-          <use href="./img/logos.svg#logo"></use>
-        </svg>
-      </a>
+  <div class="page__wrapper-center">
+    <div class="page-header__wrapper">
+      <div class="page-header__wrapper-logo logo logo-header">
+        <a class="page-header__logo-link logo__link" href="#" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
+          <svg class="page-header__logo logo__img logo-header__img logo-header__img--nojs logo__img--header" role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
+            <use href="./img/logos.svg#logo"></use>
+          </svg>
+        </a>
+      </div>
+      <nav class="page-header__main-nav main-nav main-nav--header nav-menu">
+        <button class="nav-menu__toggle" type="button" hidden>
+          <span class="page__visual-hidden">Открыть или закрыть меню.</span>
+        </button>
+        <ul class="main-nav__list   main-nav__list--header">
+          {% for page in pages %}
+            <li class="main-nav__item main-nav__item--header">
+              <a
+                class="main-nav__link main-nav__link--header"
+                href="{{ page.path }}"
+                {% if permalink == page.path %}
+                  aria-current="page"
+                {% endif %}
+              >{{ page.name }}</a>
+            </li>
+          {% else %}
+            <li>Из навигации пропали пункты меню 😕 искать в data.js</li>
+          {% endfor %}
+        </ul>
+      </nav>
     </div>
-    <nav class="page-header__main-nav main-nav main-nav--header nav-menu {% if permalink == "index.html" %}main-nav--within_index{% endif %}">
-      <button class="nav-menu__toggle" type="button" hidden>
-        <span class="page__visual-hidden">Открыть или закрыть меню.</span>
-      </button>
-      <ul class="main-nav__list   main-nav__list--header">
-        {% for page in pages %}
-          <li class="main-nav__item main-nav__item--header">
-            <a
-              class="main-nav__link main-nav__link--header"
-              href="{{ page.path }}"
-              {% if permalink == page.path %}
-                aria-current="page"
-              {% endif %}
-            >{{ page.name }}</a>
-          </li>
-        {% else %}
-          <li>Из навигации пропали пункты меню 😕 искать в data.js</li>
-        {% endfor %}
-      </ul>
-    </nav>
   </div>
+
   <div class="page-header__screen screen page__wrapper-center">
     <div class="screen__wrapper-context">
       <h1>Круизы в&nbsp;Антарктику</h1>

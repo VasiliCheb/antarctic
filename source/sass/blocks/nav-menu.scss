@@ -6,7 +6,7 @@
 
     &--opened .main-nav__list {
       z-index: 2;
-      height: 560px;
+      min-height: 560px;
     }
 
     &--nojs .main-nav__list {
