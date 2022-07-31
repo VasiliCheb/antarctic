@@ -1,8 +1,18 @@
 .contacts em {
+  display: block;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
   font-style: normal;
+  margin-bottom: 45px;
+
+  @media (--wide-vp) {
+    width: 90%;
+  }
+
+  @media (--not-wide-vp) {
+    margin-bottom: 40px;
+  }
 }
 
 .contacts p,
@@ -29,6 +39,14 @@
 }
 
 .contacts p {
+  margin-bottom: 25px;
+
+  @media (--not-wide-vp) {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
   &::before {
     mask-image: url("../../icons/sprite.svg#contacts-address");
   }

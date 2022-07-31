@@ -91,11 +91,15 @@
 }
 
 .reservation__wrapper-text p {
-  width: 360px;
+  width: 65%;
 
   @media (--not-wide-vp) {
     width: 55%;
     margin: auto;
+  }
+
+  @media (--small-vp) {
+    width: 90%;
   }
 }
 
@@ -106,6 +110,7 @@
   background-color: var(--color-base-dark);
   place-self: center;
   width: 403px;
+  min-height: 455;
   padding: 50px;
 
   @media (--small-vp) {

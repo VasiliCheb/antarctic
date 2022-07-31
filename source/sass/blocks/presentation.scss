@@ -23,6 +23,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
+  place-self: center;
+  align-items: center;
 
 
   @media (--middle-vp) {
@@ -37,15 +39,19 @@
 .presentation__wrapper-content {
   display: flex;
   flex-direction: column;
+
+  @media (--wide-vp) {
+    margin-right: 30px;
+  }
 }
 
 .presentation__wrapper-content h2 {
-  margin-bottom: 0;
-  margin-top: 66px;
+  margin-bottom: 40px;
   line-height: 1.4;
+  justify-content: center;
 
   @media (--middle-vp) {
-    margin-top: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -57,7 +63,6 @@
   width: 560px;
   height: 301px;
   background-color: var(--color-bg-image);
-  place-self: center;
 
   @media (--middle-vp) {
     width: 324px;

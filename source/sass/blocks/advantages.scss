@@ -34,11 +34,20 @@
 
 .advantages h2 {
   text-align: center;
+  margin-bottom: 60px;
+
+  @media (--small-vp) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages h3 {
   padding-top: 15px;
   margin-bottom: 20px;
+
+  @media (--small-vp) {
+    width: 75%;
+  }
 }
 
 .advantages p {
@@ -46,6 +55,14 @@
   font-size: 14px;
   line-height: 1.4;
   margin-top: 0;
+
+  @media (--wide-vp) {
+    margin-right: 10px;
+  }
+
+  @media (--small-vp) {
+    margin-right: 7px;
+  }
 }
 
 .advantages__list {
@@ -69,7 +86,7 @@
   padding: 30px;
 
   @media (--not-wide-vp) {
-    padding: 25px 20px;
+    padding: 25px 15px 25px 20px;
   }
 
   &::before {

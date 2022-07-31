@@ -65,6 +65,13 @@
     }
   }
 
+  @media (--not-small-vp) {
+    &--header {
+      padding-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
   @media (--small-vp) {
     &--header {
       margin-right: 30px;
