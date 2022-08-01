@@ -30,7 +30,7 @@
   line-height: 1.5;
   font-style: normal;
   color: var(--color-base-light);
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 
   @media (--small-vp) {
     line-height: 1.4;
@@ -46,7 +46,6 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 555px;
   background-color: var(--color-bg-reservation);
 
   @media (--x2) {
@@ -57,13 +56,11 @@
   @media (--middle-vp) {
     padding-top: 100px;
     padding-bottom: 97px;
-    min-height: 805px;
   }
 
   @media (--small-vp) {
     padding-top: 65px;
     padding-bottom: 65px;
-    min-height: 760px;
   }
 }
 
@@ -88,10 +85,21 @@
   @media (--not-wide-vp) {
     text-align: center;
   }
+
+  @media (--wide-vp) {
+    margin-left: 60px;
+  }
+}
+
+.reservation__wrapper-text h2 {
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .reservation__wrapper-text p {
-  width: 65%;
+  margin: 0;
+  width: 70%;
+  margin-bottom: 5px;
 
   @media (--not-wide-vp) {
     width: 55%;
@@ -111,7 +119,11 @@
   place-self: center;
   width: 403px;
   min-height: 455;
-  padding: 50px;
+  padding: 44px 50px 50px 50px;
+
+  @media (--wide-vp) {
+    margin-left: 45px;
+  }
 
   @media (--small-vp) {
     padding: 40px 30px;

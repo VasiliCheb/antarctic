@@ -3,7 +3,7 @@
   font-size: 54px;
   line-height: 66px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 11px;
 
   @media (--middle-vp) {
     font-size: 50px;
@@ -49,14 +49,14 @@
 
 
   @media (--wide-vp) {
-    padding: 176px 95px 40px;
+    padding: 161px 95px 0;
   }
 
   @media (--middle-vp) {
-    padding: 202px 0 40px;
+    padding-top: 202px;
   }
 
   @media (--small-vp) {
-    padding: 123px 0 40px;
+    padding-top: 123px;
   }
 }

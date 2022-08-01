@@ -4,12 +4,9 @@
   padding-left: 0;
   list-style-type: none;
 
-  @media (--wide-vp) {
-    min-width: 120px;
-  }
-
-  @media (--middle-vp) {
-    min-width: 100px;
+  @media (--not-small-vp) {
+    max-width: 150px;
+    margin-left: 50px;
   }
 }
 

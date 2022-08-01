@@ -1,5 +1,5 @@
 .cruises {
-  padding-top: 120px;
+  padding-top: 110px;
   padding-bottom: 120px;
 
   @media (--middle-vp) {
@@ -29,7 +29,7 @@
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 0;
-  margin-top: 60px;
+  margin-top: 49px;
 
   @media (--small-vp) {
     padding-left: 10px;
@@ -59,7 +59,7 @@
 
 .cruises__title {
   margin-top: auto;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   margin-left: 30px;
   grid-row: 1 / -1;
 }
@@ -67,7 +67,6 @@
 .cruises__card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding: 0 25px;
   z-index: var(--card-visible);
   margin-bottom: 31px;
@@ -82,16 +81,18 @@
 .cruises__specification {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 0;
+}
+
+.cruises__specification-set {
+  margin-bottom: 8px;
 }
 
 .cruises__specification-set dt {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .cruises__specification-set dd {
@@ -114,9 +115,10 @@
   width: 100%;
   height: fit-content;
   place-items: center;
-  margin-top: 20px;
+  margin-top: auto;
   margin-bottom: 4px;
-  padding: 14px;
+  padding: 12px;
+  padding-bottom: 7px;
 
   &:focus {
     outline: 2px solid var(--color-base-light);
@@ -154,8 +156,8 @@
 
 .cruises__item:focus-within .cruises__title,
 .cruises__item:hover .cruises__title {
-  padding: 35px 25px 0;
-  margin-bottom: 25px;
+  padding: 30px 25px 0;
+  margin-bottom: 12px;
   margin-left: 0;
   grid-row: 1 / 2;
 }

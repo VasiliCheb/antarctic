@@ -1,6 +1,6 @@
 .advantages {
   position: relative;
-  padding-top: 120px;
+  padding-top: 110px;
   padding-bottom: 120px;
   --bg-url: url("../../img/advantages-bg-l@1x.jpg");
   background:
@@ -12,7 +12,6 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 562px;
   background-color: var(--color-bg-advantages);
 
   @media (--x2) {
@@ -22,19 +21,17 @@
   @media (--middle-vp) {
     padding-top: 100px;
     padding-bottom: 100px;
-    min-height: 588px;
   }
 
   @media (--small-vp) {
     padding-top: 65px;
     padding-bottom: 65px;
-    min-height: 997px;
   }
 }
 
 .advantages h2 {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
 
   @media (--small-vp) {
     margin-bottom: 40px;
@@ -42,8 +39,8 @@
 }
 
 .advantages h3 {
-  padding-top: 15px;
-  margin-bottom: 20px;
+  padding-top: 9px;
+  margin-bottom: 10px;
 
   @media (--small-vp) {
     width: 75%;
@@ -55,6 +52,7 @@
   font-size: 14px;
   line-height: 1.4;
   margin-top: 0;
+  margin-bottom: 5px;
 
   @media (--wide-vp) {
     margin-right: 10px;
@@ -71,6 +69,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
+  margin: 0;
 
   @media (--not-wide-vp) {
     gap: 30px;
@@ -84,9 +83,20 @@
 .advantages__item {
   background-color: var(--color-base-light);
   padding: 30px;
+  padding-bottom: 20px;
 
   @media (--not-wide-vp) {
     padding: 25px 15px 25px 20px;
+
+    &--boat br {
+      display: none;
+    }
+  }
+
+  @media (--middle-vp) {
+    &--included br {
+      display: none;
+    }
   }
 
   &::before {

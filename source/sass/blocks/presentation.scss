@@ -5,7 +5,7 @@
 }
 
 .presentation {
-  padding-top: 120px;
+  padding-top: 115px;
   padding-bottom: 120px;
 
   @media (--middle-vp) {
@@ -39,6 +39,7 @@
 .presentation__wrapper-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   @media (--wide-vp) {
     margin-right: 30px;
@@ -46,9 +47,10 @@
 }
 
 .presentation__wrapper-content h2 {
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 25px;
   line-height: 1.4;
-  justify-content: center;
+
 
   @media (--middle-vp) {
     margin-bottom: 30px;
@@ -57,6 +59,7 @@
 
 .presentation__wrapper-content p {
   margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .presentation__image-set {
