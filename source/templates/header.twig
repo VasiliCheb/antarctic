@@ -14,9 +14,9 @@
         </button>
         <ul class="main-nav__list   main-nav__list--header">
           {% for page in pages %}
-            <li class="main-nav__item main-nav__item--header">
+            <li class="main-nav__item main-nav__item--header nav-menu__item">
               <a
-                class="main-nav__link main-nav__link--header"
+                class="main-nav__link main-nav__link--header nav-menu__link"
                 href="{{ page.path }}"
                 {% if permalink == page.path %}
                   aria-current="page"
