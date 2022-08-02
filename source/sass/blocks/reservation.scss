@@ -54,12 +54,12 @@
 
 
   @media (--middle-vp) {
-    padding-top: 100px;
-    padding-bottom: 97px;
+    padding-top: 88px;
+    padding-bottom: 100px;
   }
 
   @media (--small-vp) {
-    padding-top: 65px;
+    padding-top: 59px;
     padding-bottom: 65px;
   }
 }
@@ -71,11 +71,15 @@
 
   @media (--not-wide-vp) {
     grid-template-columns: 1fr;
-    gap: 60px;
+
+
+    @media (--middle-vp) {
+      gap: 45px;
+    }
   }
 
   @media (--small-vp) {
-    gap: 40px;
+    gap: 33px;
   }
 }
 
@@ -94,6 +98,14 @@
 .reservation__wrapper-text h2 {
   margin: 0;
   margin-bottom: 10px;
+
+  @media (--middle-vp) {
+    margin-bottom: 5px;
+  }
+
+  @media (--small-vp) {
+    margin-bottom: 14px;
+  }
 }
 
 .reservation__wrapper-text p {
@@ -104,6 +116,10 @@
   @media (--not-wide-vp) {
     width: 55%;
     margin: auto;
+  }
+
+  @media (--middle-vp) {
+    margin-bottom: 7px;
   }
 
   @media (--small-vp) {
@@ -126,9 +142,10 @@
   }
 
   @media (--small-vp) {
-    padding: 40px 30px;
+    padding: 35px 30px 40px 30px;
     width: 100%;
     max-width: 403px;
+    min-height: 460;
     text-align: center;
   }
 }

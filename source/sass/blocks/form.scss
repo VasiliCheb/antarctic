@@ -69,6 +69,11 @@
 
 .form__checkbox-item {
   margin-bottom: 30px;
+
+  @media (--small-vp) {
+    margin-top: -3px;
+    margin-bottom: 27px;
+  }
 }
 
 .form__checkbox-item input {

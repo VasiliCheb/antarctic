@@ -7,7 +7,7 @@
   margin-bottom: 33px;
 
   @media (--not-wide-vp) {
-    margin-bottom: 40px;
+    margin-bottom: 27px;
   }
 }
 
@@ -38,13 +38,16 @@
   margin-bottom: 20px;
 
   @media (--not-wide-vp) {
-    margin-bottom: 30px;
     display: flex;
     flex-direction: column;
   }
 
   &::before {
     mask-image: url("../../icons/sprite.svg#contacts-address");
+
+    @media (--not-wide-vp) {
+      top: 4px;
+    }
   }
 }
 

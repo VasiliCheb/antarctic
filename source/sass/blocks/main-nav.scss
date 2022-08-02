@@ -41,10 +41,10 @@
     &--header {
       position: absolute;
       background-color: var(--color-base-light);
-      left: 20px;
+      left: 35px;
       right: 15px;
       top: 0;
-      padding-top: 52px;
+      padding-top: 75px;
       z-index: 2;
       box-shadow: 15px 0 0 0 var(--color-base-light);
     }
@@ -61,7 +61,7 @@
     margin-right: 33px;
 
     @media (--middle-vp) {
-      margin-right: 23px;
+      margin-right: 24px;
     }
   }
 
@@ -80,11 +80,11 @@
     }
 
     &--header:not(:last-child) {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     &--footer:not(:last-child) {
-      margin-bottom: 23px;
+      margin-bottom: 12px;
     }
   }
 }

@@ -3,12 +3,12 @@
   padding-bottom: 120px;
 
   @media (--middle-vp) {
-    padding-top: 100px;
+    padding-top: 90px;
     padding-bottom: 100px;
   }
 
   @media (--small-vp) {
-    padding-top: 65px;
+    padding-top: 57px;
     padding-bottom: 65px;
   }
 }
@@ -34,7 +34,7 @@
   @media (--small-vp) {
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 
@@ -62,6 +62,16 @@
   margin-bottom: 22px;
   margin-left: 30px;
   grid-row: 1 / -1;
+
+  @media (--middle-vp) {
+    margin-bottom: 27px;
+    margin-left: 35px;
+  }
+
+  @media (--small-vp) {
+    margin-bottom: 16px;
+    margin-left: 25px;
+  }
 }
 
 .cruises__card {
@@ -72,6 +82,10 @@
   margin-bottom: 31px;
   grid-row: 2 / -1;
   overflow-y: auto;
+
+  @media (--middle-vp) {
+    padding: 0 35px;
+  }
 }
 
 .cruises__image-set {
@@ -160,4 +174,8 @@
   margin-bottom: 12px;
   margin-left: 0;
   grid-row: 1 / 2;
+
+  @media (--middle-vp) {
+    padding: 30px 35px 0;
+  }
 }

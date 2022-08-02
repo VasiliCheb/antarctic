@@ -14,14 +14,14 @@
   @media (--small-vp) {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 59px;
+    padding-bottom: 61px;
   }
 }
 
 .page-footer__wrapper-logo {
   @media (--small-vp) {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
   }
 }
 
@@ -61,6 +61,10 @@
   justify-content: center;
   margin-left: 60px;
 
+  @media (--not-wide-vp) {
+    margin-left: 0;
+  }
+
   @media (--small-vp) {
     grid-row: 1 / 2;
   }
@@ -79,14 +83,14 @@
   padding: 35px 0 33px;
 
   @media (--middle-vp) {
-    padding: 40px 0;
+    padding: 31px 0;
   }
 
   @media (--small-vp) {
-    padding: 30px 0 40px 0;
+    padding: 30px 0 19px;
   }
 }
-
+/*jrjyxfybt*/
 .page-footer__wrapper {
   display: flex;
   align-items: center;
