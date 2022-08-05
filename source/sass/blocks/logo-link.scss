@@ -1,28 +1,10 @@
-.logo {
+.logo-link {
+  display: block;
+  box-sizing: border-box;
+
   @media (--small-vp) {
     min-height: 42px;
   }
-}
-
-.logo__img {
-  display: block;
-  box-sizing: border-box;
-  width: 70px;
-  height: auto;
-  fill: var(--color-base-light);
-
-  @media (--middle-vp) {
-    width: 38px;
-  }
-
-  @media (--small-vp) {
-    width: 42px;
-  }
-}
-
-.logo__link {
-  display: block;
-  box-sizing: border-box;
 
   &:focus {
     outline: 2px solid var(--color-base-light);
@@ -45,5 +27,21 @@
 
   &:active {
     opacity: 60%;
+  }
+}
+
+.logo-link svg {
+  display: block;
+  box-sizing: border-box;
+  width: 70px;
+  height: auto;
+  fill: var(--color-base-light);
+
+  @media (--middle-vp) {
+    width: 38px;
+  }
+
+  @media (--small-vp) {
+    width: 42px;
   }
 }

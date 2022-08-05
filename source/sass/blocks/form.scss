@@ -2,11 +2,11 @@
   border: none;
 }
 
-
-.form ul,
+.form__list,
 .form__fieldset {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .form__item {

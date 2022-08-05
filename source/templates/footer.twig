@@ -13,34 +13,31 @@
       </noscript>
     </div>
 
-    <div class="page-footer__contacts" id="contacts">
-      <div class="contacts">
-        <em class="contacts__agitation">У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</em>
-        <address class="contacts__info">
-          <p class="contacts__address">
-            <span>г.&nbsp;Санкт Петербург,</span>
-            <span>ул.&nbsp;Большая Конюшенная, 19/8</span>
-          </p>
-          <a class="contacts__phone" href="tel:+788002000000">8-800-200-00-00</a>
-        </address>
-      </div>
+
+    <div class=" page-footer__contacts contacts" id="contacts">
+      <em class="contacts__agitation">У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</em>
+      <address class="contacts__info">
+        <p class="contacts__address">
+          <span>г.&nbsp;Санкт Петербург,</span>
+          <span>ул.&nbsp;Большая Конюшенная, 19/8</span>
+        </p>
+        <a class="contacts__phone" href="tel:+788002000000">8-800-200-00-00</a>
+      </address>
     </div>
   </div>
 
   <div class="page-footer__container">
     <div class=" page-footer__wrapper page__wrapper-center">
-      <div class="page-footer__wrapper-logo logo">
-        <a class="page-footer__logo-link logo__link" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-          <svg class="page-footer__logo logo__img" role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
-            <use href="./img/logos.svg#logo"></use>
-          </svg>
-        </a>
-      </div>
+      <a class="page-footer__logo-link logo-link" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
+        <svg role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
+          <use href="./img/logos.svg#logo"></use>
+        </svg>
+      </a>
 
-      <nav class="page-footer__main-nav main-nav main-nav--footer">
-        <ul class="main-nav__list">
+      <nav class="page-footer__main-nav main-nav">
+        <ul class="main-nav__list main-nav__list--footer">
           {% for page in pages %}
-            <li class="main-nav__item main-nav__item--footer">
+            <li class="main-nav__item">
               <a
                 class="main-nav__link"
                 href="{{ page.path }}"

@@ -1,22 +1,23 @@
 <header class="page-header">
   <div class="page__wrapper-center">
-    <div class="page-header__wrapper">
-      <div class="page-header__wrapper-logo logo logo-header">
-        <a class="page-header__logo-link logo__link" href="#" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-          <svg class="page-header__logo logo__img logo-header__img logo-header__img--nojs logo__img--header" role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
-            <use href="./img/logos.svg#logo"></use>
-          </svg>
-        </a>
-      </div>
-      <nav class="page-header__main-nav main-nav main-nav--header nav-menu">
+
+    <div class="page-header__menu">
+      <!--logo-header__img logo-header__img--nojs удалить-->
+      <a class="page-header__logo-link logo-link" href="#" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
+        <svg class="logo-header__img logo-header__img--nojs" role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
+          <use href="./img/logos.svg#logo"></use>
+        </svg>
+      </a>
+
+      <nav class="page-header__menu-nav main-nav nav-menu">
         <button class="nav-menu__toggle" type="button" hidden>
           <span class="page__visual-hidden">Открыть или закрыть меню.</span>
         </button>
-        <ul class="main-nav__list   main-nav__list--header">
+        <ul class="main-nav__list page-header__menu-list">
           {% for page in pages %}
-            <li class="main-nav__item main-nav__item--header nav-menu__item">
+            <li class="main-nav__item nav-menu__item">
               <a
-                class="main-nav__link main-nav__link--header nav-menu__link"
+                class="main-nav__link nav-menu__link"
                 href="{{ page.path }}"
                 {% if permalink == page.path %}
                   aria-current="page"
@@ -29,10 +30,8 @@
         </ul>
       </nav>
     </div>
-  </div>
 
-  <div class="page-header__screen screen page__wrapper-center">
-    <div class="screen__wrapper-context">
+    <div class=" screen screen__wrapper-context">
       <h1>Круизы в&nbsp;Антарктику</h1>
       <i>Волшебный мир айсбергов и&nbsp;пингвинов</i>
     </div>
