@@ -1,23 +1,25 @@
 <header class="page-header">
   <div class="page__wrapper-center">
 
-    <div class="page-header__menu">
-      <!--logo-header__img logo-header__img--nojs удалить-->
+    <div class="page-header__menu page-header__menu--nojs">
+
       <a class="page-header__logo-link logo-link" href="#" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-        <svg class="logo-header__img logo-header__img--nojs" role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
+        <svg role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
           <use href="./img/logos.svg#logo"></use>
         </svg>
       </a>
 
-      <nav class="page-header__menu-nav main-nav nav-menu">
-        <button class="nav-menu__toggle" type="button" hidden>
-          <span class="page__visual-hidden">Открыть или закрыть меню.</span>
-        </button>
+      <button class="page-header__menu-toggle" type="button" hidden>
+        <span class="page__visual-hidden">Открыть или закрыть меню.</span>
+      </button>
+
+      <nav class="page-header__menu-nav main-nav">
+
         <ul class="main-nav__list page-header__menu-list">
           {% for page in pages %}
-            <li class="main-nav__item nav-menu__item">
+            <li class="main-nav__item">
               <a
-                class="main-nav__link nav-menu__link"
+                class="main-nav__link"
                 href="{{ page.path }}"
                 {% if permalink == page.path %}
                   aria-current="page"

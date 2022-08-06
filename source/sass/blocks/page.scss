@@ -15,6 +15,7 @@
   background-color: var(--color-base-light);
 
   &--noscroll {
+    position: fixed;
     height: 100vh;
     overflow: hidden;
     -ms-overflow-style: none;

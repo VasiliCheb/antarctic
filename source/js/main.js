@@ -1,10 +1,29 @@
 const body = document.querySelector('.page__body');
-const logoHeader = body.querySelector('.logo-header__img');
-const navMain = body.querySelector('.nav-menu');
-const navToggle = navMain.querySelector('.nav-menu__toggle');
-const navLinkList = navMain.querySelectorAll('.nav-menu__link');
+const headerMenu = body.querySelector('.page-header__menu');
+const logoLink = headerMenu.querySelector('.page-header__logo-link');
+const navToggle = headerMenu.querySelector('.page-header__menu-toggle');
+const navLinkList = headerMenu.querySelectorAll('.page-header__menu-list a');
 
-  const closeAddNavMain = () => {
+headerMenu.classList.remove('page-header__menu--nojs');
+
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    body.classList.toggle('page__body--noscroll');
+    headerMenu.classList.toggle('page-header__menu--opened');
+  });
+
+  navLinkList.forEach(item => {
+    item.addEventListener('click', (evt) => {
+      if (headerMenu.classList.contains('page-header__menu--opened')) {
+        body.classList.remove('page__body--noscroll');
+        headerMenu.classList.remove('page-header__menu--opened');
+      }
+    });
+  });
+}
+
+
+  /*const closeAddNavMain = () => {
     navMain.classList.add('nav-menu--closed');
   };
 
@@ -54,4 +73,4 @@ const navLinkList = navMain.querySelectorAll('.nav-menu__link');
       removeScrollBody();
       removeOpenLogo();
     });
-  });
+  });*/
