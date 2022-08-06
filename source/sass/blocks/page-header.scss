@@ -27,8 +27,9 @@
 
 .page-header__logo-link {
   @media (--not-small-vp) {
-    margin-right: 20px;
-    width: 20%;
+    margin-right: 60px;
+    width: fit-content;
+    max-width: 20%;
   }
 }
 
@@ -43,16 +44,21 @@
     justify-content: flex-start;
     padding: 10px 0;
 
-    &--opened .page-header__menu-nav {
+    &--opened {
+      min-height: 42px;
+    }
+
+    &--opened .page-header__menu-list {
       display: block;
       position: absolute;
       z-index: 2;
-      top: 0;
+      top: 75px;
       left: 20px;
       right: 0;
       width: calc(100% - 20px);
       height: 100vh;
-      overflow-y: auto;
+      overflow: auto;
+      box-shadow: 0 -75px 0 0 var(--color-base-light), 15px -75px 0 0 var(--color-base-light);
     }
 
     &--opened .page-header__menu-toggle {
@@ -92,13 +98,50 @@
       display: none;
     }
 
-    &--nojs .page-header__menu-nav {
+    &--nojs .page-header__menu-list {
       display: block;
+      padding-top: 75px;
+    }
+
+    &--opened .page-header__logo-link,
+    &--nojs .page-header__logo-link {
+      position: absolute;
+      top: 10px;
+      left: 35px;
+      z-index: 3;
+
+      &:focus {
+        outline: 2px solid var(--color-base-dark);
+        outline-offset: 2px;
+      }
+
+      &:focus:not(:focus-visible) {
+        outline: none;
+        outline-offset: revert;
+      }
+
+      &:focus-visible {
+        outline: 2px solid var(--color-base-dark);
+        outline-offset: 2px;
+      }
+    }
+
+    &--opened .page-header__logo-link svg,
+    &--nojs .page-header__logo-link svg {
+      fill: var(--color-base-dark);
     }
   }
 }
 
 .page-header__menu-nav {
+  @media (--small-vp) {
+    margin-top: -10px;
+    margin-left: 20px;
+    width: 100%;
+  }
+}
+
+.page-header__menu-list {
   @media (--middle-vp) {
     font-size: 14px;
     line-height: 17px;
@@ -108,9 +151,7 @@
     font-size: 18px;
     line-height: 22px;
     width: 100%;
-    margin-top: -10px;
     background-color: var(--color-base-light);
-    padding-top: 75px;
     box-shadow: 15px 0 0 0 var(--color-base-light);
     display: none;
   }
@@ -119,7 +160,8 @@
 .page-header__menu-toggle {
   position: absolute;
   top: 15px;
-  right: 13px;
+  right: 0;
+  margin-right: -2px;
   width: 30px;
   height: 30px;
   background-color: transparent;
@@ -196,7 +238,7 @@
 
     &:focus {
       outline: 2px solid var(--color-base-dark);
-      outline-offset: 2px;
+      outline-offset: -2px;
     }
 
     &:focus:not(:focus-visible) {
@@ -206,7 +248,7 @@
 
     &:focus-visible {
       outline: 2px solid var(--color-base-dark);
-      outline-offset: 2px;
+      outline-offset: -2px;
     }
 
     &:hover {

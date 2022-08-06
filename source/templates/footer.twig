@@ -1,7 +1,9 @@
 <footer class="page-footer {% if permalink == "index.html" %}page-footer--within_index{% endif %}">
   <div class="page__footer-grid page__wrapper-center">
+
     <div class="page-footer__location">
       <iframe class="page-footer__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1638037165046!5m2!1sru!2sby" allowfullscreen="" loading="lazy"></iframe>
+
       <noscript class="page-footer__noscript">
         <picture>
           <source srcset="./img/location-l@1x.webp, ./img/location-l@2x.webp 2x" type="image/webp" media="(min-width: 1250px)">
@@ -12,7 +14,6 @@
         </picture>
       </noscript>
     </div>
-
 
     <div class=" page-footer__contacts contacts" id="contacts">
       <em class="contacts__agitation">У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</em>
@@ -28,6 +29,7 @@
 
   <div class="page-footer__container">
     <div class=" page-footer__wrapper page__wrapper-center">
+
       <a class="page-footer__logo-link logo-link" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
         <svg role="img" width="70" height="70" aria-label="Логотип компании «Круизы в Антарктику».">
           <use href="./img/logos.svg#logo"></use>
@@ -35,6 +37,7 @@
       </a>
 
       <nav class="page-footer__main-nav main-nav">
+
         <ul class="main-nav__list main-nav__list--footer">
           {% for page in pages %}
             <li class="main-nav__item">
@@ -53,6 +56,7 @@
       </nav>
 
       <div class="page-footer__social social">
+
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--facebook" href="#">
@@ -70,6 +74,7 @@
             </a>
           </li>
         </ul>
+
       </div>
     </div>
   </div>
