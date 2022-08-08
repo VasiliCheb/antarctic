@@ -400,7 +400,7 @@
                   <li class="form__item">
                     <div class="form__field">
                       <label class="page__visual-hidden" for="user-phone">Телефон:*</label>
-                      <input id="user-phone" type="tel" placeholder="Телефон" name="phone" required pattern="[8][0-9]{10}">
+                      <input id="user-phone" type="tel" placeholder="Телефон" name="phone" required pattern="[0-9()+\s-]+">
                     </div>
                   </li>
                   <li class="form__item">
@@ -414,7 +414,7 @@
 
               <div class="form__checkbox-item">
                 <label class="form__checkbox-label">
-                  <input id="user-agreement" type="checkbox" name="personal-data" value="agreement" checked>
+                  <input id="user-agreement" type="checkbox" name="personal-data" value="agreement" checked required>
                   <span class="form__checkbox-control">Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
                 </label>
               </div>

@@ -48,6 +48,7 @@
   color: var(--color-base-light);
   text-decoration: none;
   width: fit-content;
+  user-select: none;
 
   &:focus {
     outline: 2px solid var(--color-base-light);
