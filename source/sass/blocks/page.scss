@@ -39,7 +39,9 @@
 
 .page__wrapper-center {
   @media (--wide-vp) {
-    width: 1160px;
+    box-sizing: border-box;
+    max-width: 1250px;
+    padding: 0 45px;
     margin: 0 auto;
   }
 

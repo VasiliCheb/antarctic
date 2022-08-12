@@ -31,10 +31,15 @@
   margin-bottom: 0;
   margin-top: 49px;
 
+  @media (--middle-vp) {
+    grid-template-columns: repeat(auto-fill, minmax(309px, 1fr));
+  }
+
   @media (--small-vp) {
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   }
 }
 
@@ -45,9 +50,18 @@
   grid-template-rows: auto 1fr;
   color: var(--color-base-light);
   background-color: var(--color-base-dark);
-  width: 100%;
+  width: 260px;
   height: 386px;
   --card-visible: -1;
+  place-self: center;
+
+  @media (--middle-vp) {
+    width: 309px;
+  }
+
+  @media (--small-vp) {
+    width: 270px;
+  }
 }
 
 .cruises__title,

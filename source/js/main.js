@@ -11,12 +11,12 @@ if (navToggle) {
     headerMenu.classList.toggle('page-header__menu--opened');
   });
 
-body.addEventListener('click',(evt) =>{
-  if (!headerMenu.contains(evt.target)) {
-    headerMenu.classList.remove('page-header__menu--opened');
-    body.classList.remove('page__body--noscroll');
-    }
-});
+  body.addEventListener('click', (evt) => {
+    if (!headerMenu.contains(evt.target)) {
+      headerMenu.classList.remove('page-header__menu--opened');
+      body.classList.remove('page__body--noscroll');
+      }
+  });
 
   navLinkList.forEach(item => {
     item.addEventListener('click', (evt) => {

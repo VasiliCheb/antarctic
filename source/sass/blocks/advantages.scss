@@ -21,11 +21,21 @@
   @media (--middle-vp) {
     padding-top: 90px;
     padding-bottom: 100px;
+    --bg-url: url("../../img/advantages-bg-m@1x.jpg");
+
+    @media (--x2) {
+      --bg-url: url("../../img/advantages-bg-m@2x.jpg");
+    }
   }
 
   @media (--small-vp) {
     padding-top: 57px;
     padding-bottom: 64px;
+    --bg-url: url("../../img/advantages-bg-s@1x.jpg");
+
+    @media (--x2) {
+      --bg-url: url("../../img/advantages-bg-s@2x.jpg");
+    }
   }
 }
 

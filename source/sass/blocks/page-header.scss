@@ -1,14 +1,14 @@
 .page-header {
   position: relative;
-  --bg-url: url("../../img/index-top-l@1x.jpg");
-  background: var(--bg-url) no-repeat;
+  background-image: url("../../img/index-top-l@1x.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   background-color: var(--color-bg-image);
 
   @media (--x2) {
-    --bg-url: url("../../img/index-top-l@2x.jpg");
+    background-image: url("../../img/index-top-l@2x.jpg");
   }
 
   @media (--wide-vp) {
@@ -18,10 +18,20 @@
 
   @media (--middle-vp) {
     padding-bottom: 271px;
+    background-image: url("../../img/index-top-m@1x.jpg");
+
+    @media (--x2) {
+      background-image: url("../../img/index-top-m@2x.jpg");
+    }
   }
 
   @media (--small-vp) {
     padding-bottom: 171px;
+    background-image: url("../../img/index-top-s@1x.jpg");
+
+    @media (--x2) {
+      background-image: url("../../img/index-top-s@2x.jpg");
+    }
   }
 }
 
