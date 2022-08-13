@@ -43,11 +43,19 @@
 }
 
 .page-footer__iframe {
-  width: 100%;
-  height: 100%;
   border: none;
   grid-row: 1 / -1;
   grid-column: 1 /-1;
+  width: 100%;
+  height: 306px;
+
+  @media (--middle-vp) {
+    height: 335px;
+  }
+
+  @media (--small-vp) {
+    height: 316px;
+  }
 }
 
 .page-footer__noscript {
@@ -72,7 +80,15 @@
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: 100%;
+  height: 306px;
+
+  @media (--middle-vp) {
+    height: 335px;
+  }
+
+  @media (--small-vp) {
+    height: 316px;
+  }
 }
 
 .page-footer__container {

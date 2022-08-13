@@ -97,6 +97,58 @@
   grid-row: 2 / -1;
   overflow-y: auto;
 
+  @media (--wide-vp) {
+    scrollbar-color: var(--color-base-dark) var(--color-base-light);
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      width: 12px;
+      background-color: var(--color-base-light);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--color-base-dark);
+      box-shadow: inset 1px 1px 2px var(--color-base-light);
+      border-radius: 4px;
+
+      &:hover {
+        box-shadow: inset 1px 1px 5px var(--color-base-light);
+      }
+    }
+
+    &::-webkit-scrollbar-button:vertical:start:decrement {
+      background:
+        linear-gradient(120deg, var(--color-base-dark) 40%, var(--color-scroll) 41%),
+        linear-gradient(240deg, var(--color-base-dark) 40%, var(--color-scroll) 41%),
+        linear-gradient(0deg, var(--color-base-dark) 30%, var(--color-scroll) 31%);
+      background-color: var(--color-base-light);
+
+      &:hover {
+        box-shadow: inset 1px 1px 2px var(--color-base-light);
+      }
+
+      &:active {
+        box-shadow: inset 1px 1px 4px var(--color-base-light);
+      }
+    }
+
+    &::-webkit-scrollbar-button:vertical:end:increment {
+      background:
+        linear-gradient(300deg, var(--color-base-dark) 40%, var(--color-scroll) 41%),
+        linear-gradient(60deg, var(--color-base-dark) 40%, var(--color-scroll) 41%),
+        linear-gradient(180deg, var(--color-base-dark) 30%, var(--color-scroll) 31%);
+      background-color: var(--color-base-light);
+
+      &:hover {
+        box-shadow: inset 1px 1px 2px var(--color-base-light);
+      }
+
+      &:active {
+        box-shadow: inset 1px 1px 4px var(--color-base-light);
+      }
+    }
+  }
+
   @media (--middle-vp) {
     padding: 0 35px;
   }

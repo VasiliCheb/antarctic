@@ -37,10 +37,12 @@
 
 
   @media (--not-wide-vp) {
-    display: flex;
-    flex-direction: column;
     margin-top: 5px;
     background-position: left top 3px;
+  }
+
+  @media (--middle-vp) {
+    width: 80%;
   }
 }
 

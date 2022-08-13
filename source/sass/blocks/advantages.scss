@@ -2,39 +2,73 @@
   position: relative;
   padding-top: 110px;
   padding-bottom: 120px;
-  --bg-url: url("../../img/advantages-bg-l@1x.jpg");
   background:
     linear-gradient(
       var(--color-gradient-advantages),
       var(--color-gradient-advantages)
-      ),
-    var(--bg-url) no-repeat;
+    ),
+    url("../../img/advantages-bg-l@1x.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   background-color: var(--color-bg-advantages);
 
   @media (--x2) {
-    --bg-url: url("../../img/advantages-bg-l@2x.jpg");
+    background:
+      linear-gradient(
+        var(--color-gradient-advantages),
+        var(--color-gradient-advantages)
+      ),
+      url("../../img/advantages-bg-l@2x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   @media (--middle-vp) {
     padding-top: 90px;
     padding-bottom: 100px;
-    --bg-url: url("../../img/advantages-bg-m@1x.jpg");
+    background:
+      linear-gradient(
+        var(--color-gradient-advantages),
+        var(--color-gradient-advantages)
+      ),
+      url("../../img/advantages-bg-m@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
 
     @media (--x2) {
-      --bg-url: url("../../img/advantages-bg-m@2x.jpg");
+      background:
+        linear-gradient(
+          var(--color-gradient-advantages),
+          var(--color-gradient-advantages)
+        ),
+        url("../../img/advantages-bg-m@2x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
     }
   }
 
   @media (--small-vp) {
     padding-top: 57px;
     padding-bottom: 64px;
-    --bg-url: url("../../img/advantages-bg-s@1x.jpg");
+    background:
+      linear-gradient(
+        var(--color-gradient-advantages),
+        var(--color-gradient-advantages)
+        ),
+      url("../../img/advantages-bg-s@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
 
     @media (--x2) {
-      --bg-url: url("../../img/advantages-bg-s@2x.jpg");
+      background:
+        linear-gradient(
+          var(--color-gradient-advantages),
+          var(--color-gradient-advantages)
+          ),
+        url("../../img/advantages-bg-s@2x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
     }
   }
 }

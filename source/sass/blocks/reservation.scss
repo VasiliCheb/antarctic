@@ -146,6 +146,7 @@
   width: 403px;
   min-height: 455;
   padding: 44px 50px 50px 50px;
+  box-shadow: 0 4px 45px 0 var(--color-shadow-form);
 
   @media (--wide-vp) {
     margin-left: 45px;
