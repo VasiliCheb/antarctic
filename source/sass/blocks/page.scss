@@ -24,6 +24,32 @@
       display: none;
     }
   }
+
+  &--noscroll .screen {
+    z-index: -1;
+  }
+
+  &--noscroll .page-header {
+    background:
+      linear-gradient(
+        var(--color-gradient-overlay),
+        var(--color-gradient-overlay)
+        ),
+      url("../../img/index-top-s@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (--x2) {
+      background:
+        linear-gradient(
+        var(--color-gradient-overlay),
+        var(--color-gradient-overlay)
+        ),
+        url("../../img/index-top-s@2x.jpg") no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
 }
 
 .page__visual-hidden {
