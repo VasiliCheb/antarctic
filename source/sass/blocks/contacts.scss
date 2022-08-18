@@ -1,7 +1,14 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
+  @media (--wide-vp) {
+    padding-top: 75px;
+  }
+
+  @media (--middle-vp) {
+    padding-top: 67px;
+  }
 }
 
 .contacts em {

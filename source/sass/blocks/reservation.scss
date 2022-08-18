@@ -94,13 +94,12 @@
 }
 
 .reservation__wrapper-text {
-  place-self: center;
-
   @media (--not-wide-vp) {
     text-align: center;
   }
 
   @media (--wide-vp) {
+    padding-top: 163px;
     margin-left: 60px;
   }
 }
@@ -147,6 +146,7 @@
   min-height: 455;
   padding: 44px 50px 50px 50px;
   box-shadow: 0 4px 45px 0 var(--color-shadow-form);
+  margin-bottom: auto;
 
   @media (--wide-vp) {
     margin-left: 45px;
