@@ -19,6 +19,11 @@
     height: 100vh;
     overflow: hidden;
     scrollbar-width: none;
+    background:
+      linear-gradient(
+        var(--color-gradient-overlay),
+        var(--color-gradient-overlay)
+        );
 
     &::-webkit-scrollbar {
       display: none;
